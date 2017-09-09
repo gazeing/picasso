@@ -179,7 +179,7 @@ public class Picasso {
     // ResourceRequestHandler needs to be the first in the list to avoid
     // forcing other RequestHandlers to perform null checks on request.uri
     // to cover the (request.resourceId != 0) case.
-    allRequestHandlers.add(new ResourceRequestHandler(context));
+    allRequestHandlers.add(new VectorResourceRequestHandler(context));
     if (extraRequestHandlers != null) {
       allRequestHandlers.addAll(extraRequestHandlers);
     }

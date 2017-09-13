@@ -79,13 +79,8 @@ class PicassoExecutorService extends ThreadPoolExecutor {
   }
 
   private void setThreadCount(int threadCount) {
-    if (Build.VERSION.SDK_INT > 23) {
-      setMaximumPoolSize(threadCount);
-      setCorePoolSize(threadCount);
-    } else {
       setCorePoolSize(threadCount);
       setMaximumPoolSize(threadCount);
-    }
   }
 
   @Override

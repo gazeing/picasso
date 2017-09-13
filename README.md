@@ -1,42 +1,11 @@
-Picasso
+Picasso (vector-handler version)
 =======
 
-A powerful image downloading and caching library for Android
-
-![](website/static/sample.png)
-
-For more information please see [the website][1]
-
-
-
-Download
---------
-
-Download [the latest JAR][2] or grab via Gradle:
+I fork it to make it works of vector drawables. Changes are commit to vector-handler branch.
+To use it, just add one line in you gradle file:
 ```groovy
-compile 'com.squareup.picasso:picasso:2.5.2'
+ compile 'com.williamhill.tools:picasso-vector-drawable:1.0.1'
 ```
-or Maven:
-```xml
-<dependency>
-  <groupId>com.squareup.picasso</groupId>
-  <artifactId>picasso</artifactId>
-  <version>2.5.2</version>
-</dependency>
-```
-
-Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
-
-
-
-ProGuard
---------
-
-If you are using ProGuard you might need to add the following option:
-```
--dontwarn com.squareup.okhttp.**
-```
-
 
 
 License

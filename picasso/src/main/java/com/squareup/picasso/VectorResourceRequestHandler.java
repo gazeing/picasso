@@ -112,6 +112,9 @@ public class VectorResourceRequestHandler extends RequestHandler {
             } else {
                 height = intrinsicHeight;
             }
+            if (height == 0 || width == 0) {
+                return null;
+            }
             bmp = Bitmap.createBitmap(width, height, data.config != null ? data.config : DEFAULT_CONFIG);
             Canvas c = new Canvas(bmp);
             d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
